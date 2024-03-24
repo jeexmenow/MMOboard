@@ -22,7 +22,7 @@
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand text-white text-start ms-0" href="/">
-                        MMO_RPG_HOME
+                        AION DESTINY FORUM
                     </a>
                 </div>
             </nav>
@@ -41,7 +41,7 @@
                 <a href="{% url 'personal_account' pk=request.user.id %}"
                    class="link-body-emphasis text-decoration-none show me-2 text-white"
                    data-bs-toggle="dropdown" aria-expanded="true">
-                    {{ request.user.username }}
+                    <p style="color: green;">Привет, {{ request.user.username }}! &#128578;</p>
                 </a>
                 <a href="/accounts/logout/" class="btn btn-warning me-2">Выйти</a>
                 {% else %}
